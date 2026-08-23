@@ -1,0 +1,15 @@
+// Fixed type-scale tokens (in rem). Responsiveness comes from the root
+// html font-size alone (see base/_reset.scss) — 1rem already shrinks
+// fluidly with the viewport, so these ratios stay constant at every
+// screen size instead of being stepped again on top of that.
+:root{
+    --font-size-xxl: 6.4rem;
+    --font-size-xl: 5.4rem;
+    --font-size-lg: 4.2rem;
+    --font-size-md: 3rem;
+    --font-size-base: 2.4rem;
+    --font-size-sm: 2.1rem;
+    --font-size-xs: 1.8rem;
+    --font-size-xxs: 1.6rem;
+    --font-size-tiny: 1.4rem;
+}

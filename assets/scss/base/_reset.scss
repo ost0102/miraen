@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  /* Design is authored at 1920px wide with 1rem = 10px.
+     Below 1920px, 1rem shrinks in lockstep with the viewport so every
+     rem-based width/position/font-size in the site scales together,
+     like a proportionally resized screenshot — no per-breakpoint jumps.
+     Floored at the 360px-equivalent size so text never goes fully illegible
+     on very narrow phones (anything narrower may need to scroll horizontally
+     for a few of the widest decorative sections). */
+  font-size: clamp(1.875px, calc(10 * 100vw / 1920), 10px);
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mirae-n-choco-time",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch assets/scss/style.scss:assets/css/style.css",
+    "build": "sass assets/scss/style.scss:assets/css/style.css --no-source-map"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

@@ -1,0 +1,94 @@
+.floating.pc{
+    position: fixed;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    z-index: 100;
+    text-align: center;
+    max-height: 96vh;
+    max-height: 96dvh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    @include mq-max(desktop){
+        display: none;
+    }
+    
+    @media (max-height: 560px){
+        top: auto;
+        bottom: 1rem;
+        transform: none;
+        max-height: calc(100vh - 2rem);
+        max-height: calc(100dvh - 2rem);
+        .floating-char{
+            width: 6rem;
+        }
+        .floating-list a{
+            padding: 1rem 1.6rem;
+        }
+    }
+    .floating-char{
+        display: block;
+        width: 8.6rem;
+        margin: 0 auto;
+        position: relative;
+        z-index: -1;
+    }
+    .floating-list{
+        margin-top: -1.5rem;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, .12);
+        li{
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            &:last-child{
+                border-bottom: none;
+            }
+            &.on{
+                background: #FF9FBA;
+                a{
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .4rem;
+                padding: 1.4rem 2rem;
+                white-space: nowrap;
+                font-size: var(--font-size-xxs);
+                font-weight: 500;
+                color: #5A371E;
+                img{
+                    width: 1.5rem;
+                }
+            }
+        }
+    }
+    .floating-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        width: 100%;
+        padding: 1rem 0;
+        background: #5A371E;
+        font-size: var(--font-size-xxs);
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+        span{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.floating.tab{
+    display: none;
+}

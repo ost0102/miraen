@@ -1,0 +1,54 @@
+header{
+    .header-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.4rem 0;
+        background: #ff8aab;
+        .header-siren{
+            position: relative;
+            background: #FFFE8D;
+            padding: .9rem 2rem .9rem 4rem;
+            border-radius: 4rem;
+            margin-right: 2rem;
+            img{
+                position: absolute;
+                top: -1.5rem;
+                left: -2.8rem;
+                width: 7.1rem;
+            }
+            .header-badge{
+                color: #FF8AAB;
+                font-size: var(--font-size-base);
+                font-family: 'Jalnan';
+            }
+        }
+        .header-text{
+            display: flex;
+            align-items: center;
+            font-size: var(--font-size-md);
+            font-family: 'Jalnan';
+            color: #fff;
+            margin-right: 1.7rem;
+            > p{
+                z-index: 1;
+                position: relative;
+                margin: 0 1rem;
+                span{
+                    color: #FFFE8D;
+                    font-family: 'Jalnan';                    
+                }
+                img{
+                    position: absolute;
+                    bottom:0;
+                    left: -.5rem;
+                    z-index: -1;
+                    width: 16.7rem;
+                }
+            }
+        }
+        .header-arrow{
+            width: 4.3rem;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@include mq-max(desktop){
+    main{
+        section.s3{
+            .s3-inner{
+                .s3-video-wrap{
+                    .video-inner{
+                        background: #fff;
+                        .video{
+                            // top: 14rem;
+                            // left: 52%;
+                        }
+                        .video-exp{
+                            // top: 75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .floating.tab{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+        width: 100%;
+        button{
+            position: fixed;
+            bottom: 20rem;
+            color: #fff;
+            width: 14rem;
+            height: 14rem;
+            border-radius: 100%;
+            right: 2rem;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .floating-list{
+            display: flex;
+            background: rgba(0, 0, 0, 0.4);
+            li{
+                flex: 1;
+                &:not(:last-child){
+                    border-right: 1px solid #ccc
+                }
+                &.on{
+                    background: #FF9FBA;
+                    padding: 4rem 0;
+                }
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    font-size: 4rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
