@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "gsap": "^3.15.0"
+  },
+  "devDependencies": {
+    "sass": "^1.102.0"
   }
 }
