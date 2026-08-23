@@ -75,6 +75,9 @@ if (subInner && slides.length && prevBtn && nextBtn) {
     };
     prevBtn.addEventListener('click', () => goTo(current - 1));
     nextBtn.addEventListener('click', () => goTo(current + 1));
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => goTo(index));
+    });
 }
 document.querySelectorAll('.floating-top').forEach((topBtn) => {
     topBtn.addEventListener('click', () => {
