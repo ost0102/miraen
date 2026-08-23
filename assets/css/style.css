@@ -791,7 +791,7 @@ main section.s3 .s3-inner--title .h-title > h2:nth-child(2) span:nth-child(2) {
 main section.s3 .s3-inner--title .h-title > h2:nth-child(2)::before {
   content: "";
   position: absolute;
-  background: url("/assets/images/line2.png") no-repeat bottom;
+  background: url("../images/line2.png") no-repeat bottom;
   width: 100%;
   height: 100%;
 }
@@ -819,7 +819,7 @@ main section.s3 .s3-inner .s3-video-wrap {
 }
 main section.s3 .s3-inner .s3-video-wrap .video-inner {
   position: relative;
-  background: url("/assets/images/video_bg.png") no-repeat;
+  background: url("../images/video_bg.png") no-repeat;
   width: 120rem;
   height: 94rem;
 }
@@ -885,7 +885,7 @@ main section.s3 .s3-inner .s3-video-wrap .video-inner .video-exp .video-char img
 }
 main section.s4 .s4-inner {
   position: relative;
-  background: url("/assets/images/s4_bg.png") no-repeat;
+  background: url("../images/s4_bg.png") no-repeat;
   background-size: cover;
   width: 100%;
   height: 157rem;
@@ -929,7 +929,7 @@ main section.s4 .s4-inner .sub-wrap .sub-list ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/assets/images/sub_btn_off.png") no-repeat;
+  background: url("../images/sub_btn_off.png") no-repeat;
   background-size: 100% 100%;
   width: 25%;
   aspect-ratio: 186/68;
@@ -942,16 +942,16 @@ main section.s4 .s4-inner .sub-wrap .sub-list ul li button {
   font-weight: 600;
 }
 main section.s4 .s4-inner .sub-wrap .sub-list ul li.kor.on {
-  background: url("/assets/images/sub_kor_btn_on.png") no-repeat;
+  background: url("../images/sub_kor_btn_on.png") no-repeat;
 }
 main section.s4 .s4-inner .sub-wrap .sub-list ul li.math.on {
-  background: url("/assets/images/sub_math_btn_on.png") no-repeat;
+  background: url("../images/sub_math_btn_on.png") no-repeat;
 }
 main section.s4 .s4-inner .sub-wrap .sub-list ul li.social.on {
-  background: url("/assets/images/sub_social_btn_on.png") no-repeat;
+  background: url("../images/sub_social_btn_on.png") no-repeat;
 }
 main section.s4 .s4-inner .sub-wrap .sub-list ul li.science.on {
-  background: url("/assets/images/sub_science_btn_on.png") no-repeat;
+  background: url("../images/sub_science_btn_on.png") no-repeat;
 }
 main section.s4 .s4-inner .sub-wrap .sub-list ul li.on {
   background-size: 100% 100%;
@@ -1138,7 +1138,7 @@ main section.s4 .s4-inner .sub-wrap .sub-inner .sub-slide .sub-card-wrap .sub-ac
 }
 main section.s5 .s5-inner {
   position: relative;
-  background: url("/assets/images/s5_bg.png") no-repeat;
+  background: url("../images/s5_bg.png") no-repeat;
   background-size: cover;
   padding: 9rem 2rem 12rem;
 }
